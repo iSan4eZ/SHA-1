@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace SHA_1
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
-        public Form1()
+        LabForm labForm = new LabForm();
+
+        public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void btnStartLab_Click(object sender, EventArgs e)
+        {
+            labForm.Show();
         }
     }
 }
