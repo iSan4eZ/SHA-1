@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmHashIt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHashIt.Designer.cs">
+      <DependentUpon>FrmHashIt.cs</DependentUpon>
+    </Compile>
     <Compile Include="LabForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StepOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StepOne.Designer.cs">
+      <DependentUpon>StepOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StepThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StepThree.Designer.cs">
+      <DependentUpon>StepThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StepTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StepTwo.Designer.cs">
+      <DependentUpon>StepTwo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmHashIt.resx">
+      <DependentUpon>FrmHashIt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LabForm.resx">
       <DependentUpon>LabForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +102,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StepOne.resx">
+      <DependentUpon>StepOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StepThree.resx">
+      <DependentUpon>StepThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StepTwo.resx">
+      <DependentUpon>StepTwo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

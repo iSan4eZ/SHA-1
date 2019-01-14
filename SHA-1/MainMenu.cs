@@ -12,7 +12,7 @@ namespace SHA_1
 {
     public partial class MainMenu : Form
     {
-        LabForm labForm = new LabForm();
+        LabForm frmLabForm = new LabForm();
 
         public MainMenu()
         {
@@ -21,7 +21,13 @@ namespace SHA_1
 
         private void btnStartLab_Click(object sender, EventArgs e)
         {
-            labForm.Show();
+            frmLabForm.ShowDialog();
+        }
+
+        private void btnHashIt_Click(object sender, EventArgs e)
+        {
+            FrmHashIt frmHashIt = new FrmHashIt();
+            frmHashIt.ShowDialog();
         }
     }
 }
